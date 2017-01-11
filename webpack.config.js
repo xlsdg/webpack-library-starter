@@ -8,7 +8,16 @@ var libraryName = 'Library';
 var plugins = [], outputFile;
 
 if (env === 'build') {
-  plugins.push(new UglifyJsPlugin({ minimize: true }));
+  plugins.push(new UglifyJsPlugin({
+    beautify: false,
+    comments: false,
+    compress: {
+      warnings: false,
+      drop_console: false,
+      collapse_vars: true,
+      reduce_vars: true
+    }
+  }));
   outputFile = libraryName + '.min.js';
 } else {
   outputFile = libraryName + '.js';
