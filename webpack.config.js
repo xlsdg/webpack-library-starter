@@ -13,9 +13,15 @@ if (env === 'build') {
     comments: false,
     compress: {
       warnings: false,
-      drop_console: false,
+      drop_console: true,
       collapse_vars: true,
-      reduce_vars: true
+      reduce_vars: true,
+      screw_ie8: true
+    },
+    mangle: {
+      except: [],
+      screw_ie8: true,
+      keep_fnames: true
     }
   }));
   outputFile = libraryName + '.min.js';
@@ -44,6 +50,10 @@ var config = {
         test: /(\.jsx|\.js)$/,
         loader: "eslint-loader",
         exclude: /node_modules/
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
       }
     ]
   },

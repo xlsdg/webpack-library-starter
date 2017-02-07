@@ -2,7 +2,26 @@
   "name": "webpack-library-starter",
   "version": "0.1.4",
   "description": "Produce universal library with webpack and es6",
+  "keywords": [
+    "commonjs",
+    "es6",
+    "library",
+    "starter",
+    "umd",
+    "universal",
+    "webpack"
+  ],
+  "homepage": "https://github.com/krasimir/webpack-library-starter",
+  "bugs": {
+    "url": "https://github.com/krasimir/webpack-library-starter/issues"
+  },
+  "license": "MIT",
+  "author": "Krasimir Tsonev",
   "main": "lib/library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krasimir/webpack-library-starter.git"
+  },
   "scripts": {
     "build": "webpack --mode=build",
     "dev": "webpack --progress --colors --watch --mode=dev",
@@ -19,27 +38,9 @@
     "chai": "^3.5.0",
     "eslint": "^3.13.1",
     "eslint-loader": "^1.6.1",
+    "json-loader": "^0.5.4",
     "mocha": "^3.2.0",
     "webpack": "^1.14.0",
     "yargs": "^6.6.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/krasimir/webpack-library-starter.git"
-  },
-  "keywords": [
-    "webpack",
-    "es6",
-    "starter",
-    "library",
-    "universal",
-    "umd",
-    "commonjs"
-  ],
-  "author": "Krasimir Tsonev",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/krasimir/webpack-library-starter/issues"
-  },
-  "homepage": "https://github.com/krasimir/webpack-library-starter"
+  }
 }
