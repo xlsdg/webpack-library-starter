@@ -29,7 +29,8 @@
   "scripts": {
     "build": "webpack --progress --hide-modules",
     "start": "webpack --progress --hide-modules --colors --watch",
-    "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
+    "test": "mocha --require babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
