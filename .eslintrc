@@ -1,34 +1,15 @@
 {
-  "ecmaFeatures": {
-    "globalReturn": true,
-    "jsx": true,
-    "modules": true
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
   },
-
   "env": {
     "browser": true,
     "es6": true,
     "node": true
   },
-
-  "globals": {
-    "document": false,
-    "escape": false,
-    "navigator": false,
-    "unescape": false,
-    "window": false,
-    "describe": true,
-    "before": true,
-    "it": true,
-    "expect": true,
-    "sinon": true
-  },
-
-  "parser": "babel-eslint",
-
-  "plugins": [
-  ],
-
+  "extends": "standard",
   "rules": {
     "no-extra-semi": [1],
     "no-inner-declarations": [2,"both"],
@@ -41,7 +22,7 @@
     "no-undef": [2],
     "no-unused-vars": [2,{"args":"none"}],
     "array-bracket-spacing": [2,"never",{}],
-    "indent": [2,4,{"SwitchCase":1}],
+    "indent": [2,2,{"SwitchCase":1}],
     "no-array-constructor": [2],
     "no-mixed-spaces-and-tabs": [2,"smart-tabs"],
     "no-new-object": [2],
