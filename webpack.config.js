@@ -54,21 +54,21 @@ module.exports = {
       test: /\.jsx?$/,
       exclude: /node_modules/,
       use: {
-        loader: 'babel-loader',
-        options: {
-          plugins: ['add-module-exports', 'transform-es2015-modules-umd'],
-          presets: [['env', {
-            modules: false,
-            targets: {
-              browsers: [
-                '> 1%',
-                'IE >= 6',
-                'last 2 versions'
-              ]
-            }
-          }]],
-          comments: false
-        }
+        loader: 'babel-loader'
+        // options: {
+        //   plugins: ['add-module-exports', 'transform-es2015-modules-umd'],
+        //   presets: [['env', {
+        //     modules: false,
+        //     targets: {
+        //       browsers: [
+        //         '> 1%',
+        //         'IE >= 6',
+        //         'last 2 versions'
+        //       ]
+        //     }
+        //   }]],
+        //   comments: false
+        // }
       }
     }]
   }
